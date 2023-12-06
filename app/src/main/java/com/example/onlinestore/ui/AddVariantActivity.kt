@@ -14,7 +14,7 @@ class AddVariantActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.apply {
             var stock = 0
-            etVariantStock.isEnabled = true
+            etVariantStock.isEnabled = false
             imgBack.setOnClickListener { onBackPressed() }
             imgAddStock.setOnClickListener {
                 stock += 1

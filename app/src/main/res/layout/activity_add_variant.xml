@@ -135,7 +135,7 @@
                 android:id="@+id/etVariantStock"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="0"
+                android:text="0"
                 android:inputType="none"
                 android:textIsSelectable="false"
                 />
