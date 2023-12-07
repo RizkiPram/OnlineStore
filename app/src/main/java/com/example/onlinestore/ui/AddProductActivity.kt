@@ -49,25 +49,6 @@ class AddProductActivity : AppCompatActivity() {
             }
         }
     }
-//    private fun startCameraX() {
-//        val intent = Intent(this, AddVariantActivity::class.java)
-//        launcherIntentCameraX.launch(intent)
-//    }
-//    private val launcherIntentCameraX = registerForActivityResult(
-//        ActivityResultContracts.StartActivityForResult()
-//    ) {
-//        if (it.resultCode == CAMERA_X_RESULT) {
-//            val myFile = it.data?.getSerializableExtra("picture") as File
-//            val isBackCamera = it.data?.getBooleanExtra("isBackCamera", true) as Boolean
-////            getFile = myFile
-//            val result = rotateBitmap(
-//                BitmapFactory.decodeFile(getFile?.path),
-//                isBackCamera
-//            )
-////            binding.btnAddVariant.setImageBitmap(result)
-////            viewModel.getFileResult(getFile)
-//        }
-//    }
 
     private fun openActivityForResult() {
         startForResult.launch(Intent(this, AddVariantActivity::class.java))
