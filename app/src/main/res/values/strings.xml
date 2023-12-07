@@ -10,4 +10,5 @@
     <string name="create_product">Create Product</string>
     <string name="description">Description</string>
     <string name="add_variant">Add Variant</string>
+
 </resources>

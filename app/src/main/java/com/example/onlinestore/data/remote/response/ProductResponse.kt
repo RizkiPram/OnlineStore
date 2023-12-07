@@ -1,6 +1,8 @@
 package com.example.onlinestore.data.remote.response
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class ProductResponse(
 
@@ -62,6 +64,7 @@ data class ItemsItem(
 	val totalStok: Int
 )
 
+@Parcelize
 data class VariantsItem(
 
 	@field:SerializedName("image")
@@ -73,9 +76,9 @@ data class VariantsItem(
 	@field:SerializedName("name")
 	val name: String,
 
-	@field:SerializedName("id")
-	val id: Int,
+//	@field:SerializedName("id")
+//	val id: Int,
 
 	@field:SerializedName("stock")
 	val stock: Int
-)
+) : Parcelable
